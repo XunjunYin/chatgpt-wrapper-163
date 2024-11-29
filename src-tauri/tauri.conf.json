@@ -26,6 +26,11 @@
         "unmaximize": true,
         "unminimize": true,
         "startDragging": true
+      },
+      "http": {
+        "all": true,
+        "request": true,
+        "scope": ["https://chatgpt.nie.netease.com/*"]
       }
     },
     "bundle": {
@@ -64,7 +69,7 @@
       }
     },
     "security": {
-      "csp": "default-src 'self' https://chatgpt.nie.netease.com/ 'unsafe-eval' 'unsafe-inline'"
+      "csp": "default-src 'self' https://chatgpt.nie.netease.com/ https://*.nie.netease.com; img-src 'self' https: data:; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://chatgpt.nie.netease.com/ https://*.nie.netease.com; style-src 'self' 'unsafe-inline' https://chatgpt.nie.netease.com/ https://*.nie.netease.com; connect-src 'self' https://chatgpt.nie.netease.com/ https://*.nie.netease.com"
     },
     "windows": [
       {

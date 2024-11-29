@@ -20,6 +20,21 @@
     </style>
 </head>
 <body>
-    <iframe src="https://chatgpt.nie.netease.com/" allow="clipboard-read; clipboard-write"></iframe>
+    <iframe 
+        src="https://chatgpt.nie.netease.com/" 
+        allow="clipboard-read; clipboard-write; microphone; camera; geolocation"
+        sandbox="allow-same-origin allow-scripts allow-popups allow-forms allow-downloads"
+    ></iframe>
+    <script>
+        // 监听 iframe 加载状态
+        document.querySelector('iframe').addEventListener('load', function() {
+            console.log('iframe loaded');
+        });
+        
+        // 监听 iframe 加载错误
+        document.querySelector('iframe').addEventListener('error', function(e) {
+            console.error('iframe load error:', e);
+        });
+    </script>
 </body>
 </html>
