@@ -2,8 +2,8 @@
   "build": {
     "beforeDevCommand": "",
     "beforeBuildCommand": "",
-    "devPath": ".",
-    "distDir": "."
+    "devPath": "../src",
+    "distDir": "../src"
   },
   "package": {
     "productName": "ChatGPT Wrapper",
@@ -79,7 +79,7 @@
         "resizable": true,
         "title": "ChatGPT",
         "width": 1200,
-        "url": "https://chatgpt.nie.netease.com/"
+        "url": "./index.html"
       }
     ],
     "systemTray": {
