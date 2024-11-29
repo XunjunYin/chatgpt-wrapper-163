@@ -19,6 +19,13 @@ Available packages:
 - Windows: `.msi` (coming soon)
 - Linux: `.AppImage` (coming soon)
 
+### macOS Installation Notes
+If you see the "'ChatGPT Wrapper' is damaged and can't be opened" message, you can fix it by running the following command in Terminal:
+```bash
+xattr -cr "/Applications/ChatGPT Wrapper.app"
+```
+Then try opening the app again.
+
 ## Development Prerequisites
 
 - Rust (latest stable version)
