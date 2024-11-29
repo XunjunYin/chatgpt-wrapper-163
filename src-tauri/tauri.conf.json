@@ -65,7 +65,7 @@
       "csp": "default-src 'self' https://chatgpt.nie.netease.com/ 'unsafe-eval' 'unsafe-inline'"
     },
     "updater": {
-      "active": true,
+      "active": false,
       "endpoints": [
         "https://github.com/XunjunYin/chatgpt-wrapper-163/releases/latest/download/latest.json"
       ],
