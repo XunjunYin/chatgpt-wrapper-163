@@ -5,6 +5,9 @@ on:
       - 'v*'
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   release:
     strategy:
@@ -35,8 +38,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tagName: ${{ github.ref_name }}
-          releaseName: 'ChatGPT Wrapper v__VERSION__'
+          tagName: app-v${{ github.run_number }}
+          releaseName: 'ChatGPT Wrapper v${{ github.run_number }}'
           releaseBody: 'See the assets to download and install this version.'
           releaseDraft: true
           prerelease: false
