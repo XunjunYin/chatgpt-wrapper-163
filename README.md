@@ -10,6 +10,15 @@ A desktop application wrapper for ChatGPT website (https://chatgpt.nie.netease.c
 - Automatic updates support
 - Cross-platform builds via GitHub Actions
 
+## Download
+
+You can download the latest version of ChatGPT Wrapper from the [Releases](https://github.com/XunjunYin/chatgpt-wrapper-163/releases) page.
+
+Available packages:
+- macOS: `.dmg` (Apple Silicon/M1/M2)
+- Windows: `.msi` (coming soon)
+- Linux: `.AppImage` (coming soon)
+
 ## Development Prerequisites
 
 - Rust (latest stable version)
